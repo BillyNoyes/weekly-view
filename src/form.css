@@ -1,0 +1,41 @@
+.form {
+    margin: 5vh 0;
+}
+
+.form__inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__inputs > input {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.form__inputs > select {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.form__inputs > button {
+    background: none;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.form__errorMessage {
+    color: red;
+    text-align: center;
+    padding-top: 10px;
+}
+
+@media (max-width: 950px) {
+    .form__inputs {
+        flex-direction: column;
+    }
+    .form__inputs > * {
+        margin-bottom: 10px;
+    }
+}
+
